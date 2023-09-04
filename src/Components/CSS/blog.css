@@ -18,4 +18,22 @@
 }
 .blog-home .bottom-blog {
   background-color: #f5f8f9;
+}
+.blog-home .bottom-blog .blog-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+.blog-home .bottom-blog .blog-cards h4 {
+  cursor: pointer;
+}
+.blog-home .bottom-blog .blog-cards h4:hover {
+  color: red;
+}
+.blog-home .bottom-blog .blog-card-info {
+  background-color: #f5f8f9;
+  width: 80%;
+  margin: auto;
 }/*# sourceMappingURL=blog.css.map */
