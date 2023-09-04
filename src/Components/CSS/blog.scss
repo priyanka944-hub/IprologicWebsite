@@ -1,0 +1,24 @@
+.blog-home {
+  .blog-container {
+    background-image: url(../Assets/home_bg.jpg);
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    .background-blog {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.4);
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1{
+        font-size: 60px;
+      }
+    }
+    
+  }
+  .bottom-blog{
+    background-color: #f5f8f9;
+  }
+}

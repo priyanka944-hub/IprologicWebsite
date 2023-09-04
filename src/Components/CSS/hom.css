@@ -1,0 +1,28 @@
+.mainHome .Home {
+  background-image: url(../Assets/home_bg.jpg);
+  background-size: cover;
+  height: 850px;
+  width: 100%;
+}
+.mainHome .Home .head {
+  text-align: left;
+  color: white;
+  padding: 250px 200px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.mainHome .Home .head h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.mainHome .Home .head .btn {
+  background-color: rgb(249, 83, 83);
+  padding: 10px;
+  width: 150px;
+  border-radius: 50px;
+  color: white;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.mainHome .Home .head .btn:hover {
+  background-color: red;
+}/*# sourceMappingURL=hom.css.map */
