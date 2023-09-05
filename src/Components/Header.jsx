@@ -7,6 +7,7 @@ import Servieces from './Servieces';
 import Portfolio from './Portfolio';
 import Blog from './Blog';
 import Contact from './Contact';
+import OurCompany from './OurCompany';
 
 export default function Header() {
   return (
@@ -42,7 +43,7 @@ export default function Header() {
                                            <div className="dropdown">
                                                 <p className="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</p>
                                                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><a className="dropdown-item" href="#">OUR COMPANY</a></li>
+                                                    <li><Link to='/ourcompany'>OUR COMPANY</Link></li>
                                                     <li><a className="dropdown-item" href="#">PRICING</a></li>
                                                     <li><a className="dropdown-item dropdown-toggle" href="#">SUB MENU</a>
 
@@ -72,6 +73,7 @@ export default function Header() {
         <Route path='/portfolio' element={<Portfolio/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/ourcompany' element={<OurCompany/>}/>
 
         </Routes>
     </BrowserRouter>
