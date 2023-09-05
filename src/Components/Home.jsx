@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -7,12 +7,8 @@ import carousel from './Assets/card1.jpg'
 import slide from './Assets/card3.jpg'
 import './CSS/hom.scss'
 import { Android2, Award, BarChart, CcCircle, CodeSquare, CollectionPlay, PaintBucket, PencilSquare, Person, PersonAdd, Phone, WindowDesktop } from 'react-bootstrap-icons';
-=======
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import "./CSS/hom.scss";
->>>>>>> bde01cb35c8566c47e52e38f9185c00f8ee9d287
+
+
 export default function Home() {
   return (
     <div className="mainHome">
@@ -25,8 +21,8 @@ export default function Home() {
           <button className="btn">Get Started {">"}</button>
         </div>
       </div>
-    </div>
-<<<<<<< HEAD
+    
+
     <div className='cards'>
     
       <p className='para'>We are creative & expert people</p>
@@ -401,7 +397,7 @@ export default function Home() {
     
     
     )
-=======
-  );
->>>>>>> bde01cb35c8566c47e52e38f9185c00f8ee9d287
+
+  
+
 }
