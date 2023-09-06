@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./CSS/header.css";
 import { Facebook, Github, Mailbox2, Twitter } from "react-bootstrap-icons";
@@ -40,6 +41,18 @@ const items = [
       ),
     },
   ];
+=======
+import React from 'react';
+import './CSS/header.css'
+import { Facebook,  Github,  Mailbox2,  Twitter } from 'react-bootstrap-icons';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Servieces from './Servieces';
+import Portfolio from './Portfolio';
+import Blog from './Blog';
+import Contact from './Contact';
+import OurCompany from './OurCompany';
+>>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
 
 export default function Header() {
 
@@ -76,6 +89,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
+<<<<<<< HEAD
           </div>
           <div className="menubar">
             <div className="row">
@@ -118,6 +132,25 @@ export default function Header() {
                           <a className="dropdown-item dropdown-toggle" href="#">
                             SUB MENU
                           </a>
+=======
+        </div>
+        </div>
+        <div className='menubar'>
+                    <div className='row'>
+                            <div className='col-5'>
+                                <h3>Iprologic <span className='text-danger'>Solutions</span></h3>
+                            </div>
+                            <div className='col-7'>
+                                <div className='row'>
+                                        <div className='col-1'><Link to="/">HOME</Link></div>
+                                        <div className='col-1'>
+                                           <div className="dropdown">
+                                                <p className="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</p>
+                                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <li><Link to='/ourcompany'>OUR COMPANY</Link></li>
+                                                    <li><a className="dropdown-item" href="#">PRICING</a></li>
+                                                    <li><a className="dropdown-item dropdown-toggle" href="#">SUB MENU</a>
+>>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
 
                           <ul
                             className="dropdown-menu"
@@ -169,6 +202,7 @@ export default function Header() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/servieces" element={<Servieces />} />
@@ -176,6 +210,17 @@ export default function Header() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/blogsidebar" element={<Blogslidebar/>}/>
           <Route path="/contact" element={<Contact />} />
+=======
+    </div>
+    <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/servieces' element={<Servieces/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/blog' element={<Blog/>}/>
+        <Route path='/contact' element={<Contact/>}/>
+        <Route path='/ourcompany' element={<OurCompany/>}/>
+
+>>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
         </Routes>
       </BrowserRouter>
     </div>
