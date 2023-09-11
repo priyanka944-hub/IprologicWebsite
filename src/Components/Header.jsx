@@ -1,61 +1,38 @@
-<<<<<<< HEAD
 import React from "react";
 import "./CSS/header.css";
 import { Facebook, Github, Mailbox2, Twitter } from "react-bootstrap-icons";
-import { BrowserRouter, Link, Route, Routes,useNavigate } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Servieces from "./Servieces";
 import Portfolio from "./Portfolio";
 import Blog from "./Blog";
-import Contact from "./Contact";
 import Blogslidebar from './Blogslidebar'
-import { DownOutlined, SmileOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
-
+import Contact from "./Contact";
+import OurCompany from "./OurCompany";
+import { DownOutlined, SmileOutlined } from "@ant-design/icons";
+import { Dropdown, Space } from "antd";
+import Blogsingle from "../Blogsingle";
 const items = [
-    {
-        key: '1',
-        danger: true,
-        label: (
-            <Link to={'/blog'}>
-              BLOG GRID
-            </Link>
-          ),
-      },
-      {
-        key: '2',
-        danger: true,
-        label: (
-            <Link to={'/blogsidebar'}>
-              BLOG WITH SIDEBAR
-            </Link>
-          ),
-      },
-    {
-      key: '3',
-      danger: true,
-      label: (
-        <Link to={'/blogsidebar'}>
-          BLOG SINGLE
-        </Link>
-      ),
-    },
-  ];
-=======
-import React from 'react';
-import './CSS/header.css'
-import { Facebook,  Github,  Mailbox2,  Twitter } from 'react-bootstrap-icons';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import Servieces from './Servieces';
-import Portfolio from './Portfolio';
-import Blog from './Blog';
-import Contact from './Contact';
-import OurCompany from './OurCompany';
->>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
+  {
+    key: "1",
+    danger: true,
+    label: (<Link to={'/blog'}>Blog Grid</Link>),
+  },
+  {
+    key: "2",
+    danger: true,
+    label: (<Link to={'/blogsidebar'}>Blog sidebar</Link>),
+
+  },
+  {
+    key: "3",
+    danger: true,
+    label: (<Link to={'/blogsingle'}>Blog Single</Link>),
+  },
+
+];
 
 export default function Header() {
-
   return (
     <div>
       <BrowserRouter>
@@ -89,7 +66,6 @@ export default function Header() {
                 </div>
               </div>
             </div>
-<<<<<<< HEAD
           </div>
           <div className="menubar">
             <div className="row">
@@ -119,9 +95,7 @@ export default function Header() {
                         aria-labelledby="dropdownMenuLink"
                       >
                         <li>
-                          <a className="dropdown-item" href="#">
-                            OUR COMPANY
-                          </a>
+                          <Link to="/ourcompany">OUR COMPANY</Link>
                         </li>
                         <li>
                           <a className="dropdown-item" href="#">
@@ -132,25 +106,6 @@ export default function Header() {
                           <a className="dropdown-item dropdown-toggle" href="#">
                             SUB MENU
                           </a>
-=======
-        </div>
-        </div>
-        <div className='menubar'>
-                    <div className='row'>
-                            <div className='col-5'>
-                                <h3>Iprologic <span className='text-danger'>Solutions</span></h3>
-                            </div>
-                            <div className='col-7'>
-                                <div className='row'>
-                                        <div className='col-1'><Link to="/">HOME</Link></div>
-                                        <div className='col-1'>
-                                           <div className="dropdown">
-                                                <p className="dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">ABOUT</p>
-                                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                    <li><Link to='/ourcompany'>OUR COMPANY</Link></li>
-                                                    <li><a className="dropdown-item" href="#">PRICING</a></li>
-                                                    <li><a className="dropdown-item dropdown-toggle" href="#">SUB MENU</a>
->>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
 
                           <ul
                             className="dropdown-menu"
@@ -178,18 +133,19 @@ export default function Header() {
                     <Link to="/portfolio">PORTFOLIO</Link>
                   </div>
                   <div className="col-1">
-                  <Dropdown
-                  menu={{
-                    items,
-                  }}
-                >
-                  <a onClick={(e) => e.preventDefault()}>
-                    <Space>
-                      Blog
-                      <DownOutlined />
-                    </Space>
-                  </a>
-                </Dropdown>
+
+                      <Dropdown
+                        menu={{
+                          items,
+                        }}
+                      >
+                        <a onClick={(e) => e.preventDefault()}>
+                          <Space>
+                           Blog
+                            <DownOutlined />
+                          </Space>
+                        </a>
+                      </Dropdown>
                   </div>
                   <div className="col-1">
                     <Link to="/contact">CONTACT</Link>
@@ -202,25 +158,16 @@ export default function Header() {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/servieces" element={<Servieces />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blogsidebar" element={<Blogslidebar/>}/>
           <Route path="/contact" element={<Contact />} />
-=======
-    </div>
-    <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/servieces' element={<Servieces/>}/>
-        <Route path='/portfolio' element={<Portfolio/>}/>
-        <Route path='/blog' element={<Blog/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/ourcompany' element={<OurCompany/>}/>
-
->>>>>>> c283105938a1a6021012c631c8c0d42337bd1d88
+          <Route path="/ourcompany" element={<OurCompany />} />
+          <Route path={"/blogsidebar"} element={<Blogslidebar/>}/>
+          <Route path={"/blogsingle"} element={<Blogsingle/>}/>
+       
         </Routes>
       </BrowserRouter>
     </div>
