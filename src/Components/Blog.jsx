@@ -21,7 +21,7 @@ export default function Blog() {
             >
               Home
             </Link>
-            <span className="line-bright"> / Our blog</span>
+            <span style={{color:"#6b686c"}}className="line-bright"> / Our blog</span>
           </div>
         </div>
       </div>

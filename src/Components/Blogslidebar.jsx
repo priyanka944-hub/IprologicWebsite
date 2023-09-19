@@ -13,7 +13,7 @@ export default function Blog() {
     <div className="blog-home">
       <div className="blog-container">
         <div className="background-blog">
-          <p className="line-bright"> sidebar Our blog</p>
+          <p className="line-bright">Our blog</p>
           <h1 className="line-bright">Blog Articles</h1>
           <div>
             <Link
@@ -22,7 +22,7 @@ export default function Blog() {
             >
               Home
             </Link>
-            <span className="line-bright"> / Our blog</span>
+            <span style={{color:"#6b686c"}}className="line-bright"> /Our blog</span>
           </div>
         </div>
       </div>
